@@ -6,7 +6,8 @@ Ce projet consiste en la mise en œuvre d’un **stress test de risque de crédi
 
 L’objectif est d’analyser l’impact d’un **choc macroéconomique** sur le risque de crédit du portefeuille, à travers l’évolution des **probabilités de défaut (PD)** et de la **perte attendue (Expected Loss – EL)**, en adoptant une lecture **sectorielle** du risque.
 
-Le projet s’inscrit dans une démarche proche des pratiques des équipes **Global Risk** en environnement bancaire.
+Le projet s’inscrit dans une démarche proche des pratiques des équipes **Global Risk** en environnement bancaire et est accompagné d'un document de synthèse (étude decas) présentant la méthodologie.
+[Consulter l’étude de cas (PDF)]( Carole_Alain_Stress_Test_Global_Risk_Banque_Alpha.pdf) 
 
 
 ## Technologies utilisées
