@@ -67,5 +67,4 @@ Ces indicateurs permettent d’évaluer l’impact d’un choc économique sur l
 ## Documentation
 
 Une étude de cas complète est disponible :
-
 [Voir le document PDF](./Carole_Alain_Stress_Test_Global_Risk_Banque_Alpha.pdf)
