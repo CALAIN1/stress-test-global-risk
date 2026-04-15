@@ -1,13 +1,49 @@
-# Stress Test Global Risk – Banque Alpha
+# Analyse de risque crédit sous scénario macroéconomique
 
-## Présentation du projet
+## Objectif du projet
 
-Ce projet consiste en la mise en œuvre d’un **stress test de risque de crédit** appliqué à un portefeuille bancaire fictif, représentatif des expositions d’une banque universelle nommée *Banque Alpha*.
+Ce projet montre comment analyser l’évolution d’un portefeuille de crédit à partir d’un scénario macroéconomique défavorable.
 
-L’objectif est d’analyser l’impact d’un **choc macroéconomique** sur le risque de crédit du portefeuille, à travers l’évolution des **probabilités de défaut (PD)** et de la **perte attendue (Expected Loss – EL)**, en adoptant une lecture **sectorielle** du risque.
+L’objectif est de structurer les données, calculer des indicateurs de risque et comparer l’impact du scénario sur différents secteurs.
 
-Le projet s’inscrit dans une démarche proche des pratiques des équipes **Global Risk** en environnement bancaire et est accompagné d'un document de synthèse (étude decas) présentant la méthodologie.
-[Consulter l’étude de cas (PDF)]( Carole_Alain_Stress_Test_Global_Risk_Banque_Alpha.pdf) 
+Ce projet met l’accent sur la logique d’analyse, la lecture des résultats et l’interprétation métier.
+
+
+## Contexte
+
+Un portefeuille fictif de 130 entreprises est analysé dans deux secteurs :
+
+- Construction (secteur cyclique)
+- Grande distribution alimentaire (secteur défensif)
+
+Un scénario macroéconomique de type stagflation est appliqué afin d’évaluer la sensibilité du portefeuille.
+
+
+## Méthodologie
+
+1. Création d’un portefeuille de crédit (baseline)
+2. Application d’un scénario de stress macroéconomique
+3. Ajustement des probabilités de défaut (PD)
+4. Calcul de la perte attendue (Expected Loss)
+5. Comparaison des résultats par secteur
+
+
+## Indicateurs utilisés
+
+- PD : probabilité de défaut
+- LGD : perte en cas de défaut
+- EAD : exposition au défaut
+- EL : perte attendue
+
+Ces indicateurs permettent d’évaluer l’impact d’un choc économique sur le portefeuille.
+
+
+## Insights principaux
+
+- Le scénario de stress augmente significativement le niveau de risque
+- Le secteur construction est plus sensible aux chocs macroéconomiques
+- La perte attendue progresse plus fortement dans les secteurs cycliques
+- L’analyse met en évidence des concentrations de risque sectorielles
 
 
 ## Technologies utilisées
@@ -18,54 +54,18 @@ Le projet s’inscrit dans une démarche proche des pratiques des équipes **Glo
 - Matplotlib
 - JupyterLab
 
-## Objectifs de l’analyse
 
-- Simuler un portefeuille de crédit réaliste en situation normale (baseline)
-- Appliquer un scénario de stress macroéconomique
-- Mesurer l’impact du choc sur les indicateurs de risque de crédit
-- Comparer la sensibilité d’un secteur cyclique et d’un secteur défensif
-- Identifier les phénomènes de concentration sectorielle du risque
+## Compétences mobilisées
 
-
-## Structure du portefeuille
-
-Le portefeuille est composé de **130 entreprises fictives**, réparties de manière équilibrée entre deux secteurs :
-
-- **Construction (65 entités)**  
-  Secteur cyclique, fortement sensible aux conditions macroéconomiques dégradées
-
-- **Grande Distribution alimentaire (65 entités)**  
-  Secteur défensif, servant de groupe de référence
+- Nettoyage et structuration de données
+- Création d’indicateurs
+- Analyse comparative
+- Visualisation de données
+- Interprétation métier
 
 
-## Indicateurs de risque utilisés
+## Documentation
 
-- **Probability of Default (PD)**  
-- **Loss Given Default (LGD)**  
-- **Exposure at Default (EAD / Encours)**  
-- **Expected Loss (EL)**  
+Une étude de cas complète est disponible :
 
-La perte attendue est calculée selon la formule standard : EL = PD × LGD × EAD
-
-## Scénarios de stress
-
-
-### Scénario macroéconomique
-
-Le scénario retenu correspond à une situation de **stagflation sévère**, caractérisée notamment par :
-- Recul du PIB
-- Inflation persistante
-- Hausse marquée des taux d’intérêt
-- Augmentation des prix de l’énergie
-
-### Stress de crédit appliqué
-
-L’analyse repose sur **deux niveaux de stress** :
-
-- **Stress modéré**  
-  Utilisé pour les résultats chiffrés et graphiques présentés.  
-  Il repose sur une augmentation sectorielle différenciée des probabilités de défaut.
-
-- **Stress sévère**  
-  Test de robustesse complémentaire, appliquant des multiplicateurs plus élevés sur les PD, avec plafonnement à 100 %, afin d’explorer un scénario de dégradation extrême.
-   Le stress sévère n’est pas utilisé pour les résultats graphiques principaux, mais sert de test de robustesse méthodologique du modèle.
+[Voir le document PDF](./Carole_Alain_Stress_Test_Global_Risk_Banque_Alpha.pdf)
