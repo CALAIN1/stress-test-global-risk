@@ -64,6 +64,12 @@ Ces indicateurs permettent d’évaluer l’impact d’un choc économique sur l
 - Interprétation métier
 
 
+## Conclusion
+
+Ce stress test met en évidence l’impact d’un scénario macroéconomique dégradé sur le risque de crédit du portefeuille.
+L’augmentation des probabilités de défaut (PD) et de la perte attendue (EL) reflète une détérioration du profil de risque, particulièrement marquée sur les secteurs les plus sensibles au cycle économique.
+Dans une logique de gestion des risques, ce type d’analyse permet d’anticiper les vulnérabilités du portefeuille, d’identifier les concentrations sectorielles et d’alimenter des décisions stratégiques (allocation, limites de risque, capital).
+
 ## Documentation
 
 Une étude de cas complète est disponible :
